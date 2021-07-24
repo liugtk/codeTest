@@ -25,7 +25,6 @@ Routes(app);
 
 
 app.use((err, req, res, next) => {
-    console.log("catchfunc", err)
     if (err instanceof APIError) {
         res.status(err.errorCode).json({
             message: err.message

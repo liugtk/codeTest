@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "0b8c35ac-9045-4253-835d-fd1c6453b4e1",
+		"name": "device",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "devices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"device\": \"Moto K\",\r\n    \"os\" : \"Android 4.5\",\r\n    \"manufacturer\": \"Motorola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/devices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"device\": \"Moto G\",\r\n    \"os\" : \"Android 4.6\",\r\n    \"manufacturer\": \"Motorola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/devices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"device\": \"Moto G\",\r\n    \"os\" : \"Android 4.6\",\r\n    \"manufacturer\": \"Motorola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/devices/60fba29ec86d3a45386de298",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"devices",
+						"60fba29ec86d3a45386de298"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices-checkout",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"action\": \"check-out\",\r\n    \"name\": \"Aby\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/devices/60fbb27844ed735ce02db1f5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"devices",
+						"60fbb27844ed735ce02db1f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices-checkin",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"action\": \"check-in\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/devices/60fbb27844ed735ce02db1f5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"devices",
+						"60fbb27844ed735ce02db1f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feedbacks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"bad\",\r\n    \"description\": \"performed badly\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/devices/60fbb27844ed735ce02db1f5/feedbacks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"devices",
+						"60fbb27844ed735ce02db1f5",
+						"feedbacks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

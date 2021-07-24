@@ -14,7 +14,6 @@ module.exports = {
             res.status(201).json(responseBody);
         }
         catch (err) {
-            console.log(err.message)
             next(new APIError(err.message, 400));
         }
     },
@@ -36,7 +35,6 @@ module.exports = {
         try {
             const deviceId = req.params.deviceId;
             const selectedDevice = await DeviceModel.findByIdAndDelete(deviceId);
-            console.log(selectedDevice, deviceId);
             if (selectedDevice) {
                 res.status(200).send();
             }
