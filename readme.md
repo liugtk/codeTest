@@ -57,6 +57,6 @@ You can download postman from: https://www.postman.com/downloads/
 
 once installed and open, import the postman collection. you can directly hit the API and test the functions. 
 
+e.g.:
 
-
- 
+![image-20210724150220619](imgs\image-20210724150220619.png)
